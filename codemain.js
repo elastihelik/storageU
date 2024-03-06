@@ -26,3 +26,11 @@ this.contentsElement.addEventListener("wheel", (e) => {
 					case "undefined":
 						sorter = "string";
 						break;
+var column = new Column(definition, this),
+		colEl = column.getElement(),
+		index = nextToColumn ? this.findColumnIndex(nextToColumn) : nextToColumn;
+		
+		if(nextToColumn && index > -1){
+			var topColumn = nextToColumn.getTopColumn();
+			var parentIndex = this.columns.indexOf(topColumn);
+			var nextEl = topColumn.getElement();
