@@ -2,7 +2,7 @@ this.contentsElement.addEventListener("wheel", (e) => {
 			var left;
 
 			if(e.deltaX){
-				left = this.contentsElement.scrollLeft + e.deltaX;
+				left = this.contentsElement.scrollLeft + e.deltaX;//yea
 
 				this.table.rowManager.scrollHorizontal(left);
 				this.table.columnManager.scrollHorizontal(left);
