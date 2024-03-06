@@ -10,7 +10,7 @@ this.contentsElement.addEventListener("wheel", (e) => {
 		});
 	}
 	
-		if(data && data.length){
+		if(data && data.length){//good
 			
 			row = data[0];
 			
